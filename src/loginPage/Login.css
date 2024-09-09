@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+.container{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 75%;
+    height: 510px;
+    background: url(BGImg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    padding: 80px;
+    color: #e4e4e4;
+    background: #000;
+    display: flex;
+   
+}
+.content .logo{
+    font-size: 35px;
+}
+
+.text-sci span{
+    font-size: 28px;
+    color:rgb(226, 237, 239);
+    font-weight: 900;
+}
+.text-sci p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.social-icon a i{
+    font-size: 22px;
+    color: #e4e4e4;
+    margin-right: 10px;
+    transition: .5s ease;
+}
+.social-icon a:hover i{
+    transform: scale(1,2);
+}
+.container .logreg-box{
+    width: calc(100% - 58%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+.logreg-box .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    color: #e4e4e4;
+}
+
+.logreg-box .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+    transition-delay: .7s;
+}
+.logreg-box.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+/* 
+.logreg-box .form-box.register{
+    transform: translateX(70px);
+    transition: transform .7s ease;
+    transition-delay: 0s;
+}
+.logreg-box.active .form-box.register{
+    transform: translateX(0);
+    transition-delay: 7s;
+} */
+
+.form-box h1 {
+    font-size: 32px;    
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+.form-box h6 {
+   
+    font-size: 13px;
+    text-align: center;
+}
+.form-box .input-box{
+    position: relative;
+    width: 370px;
+    height: 50px;
+    border-bottom: 2px solid #e4e4e4;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e4e4e4;
+    padding-right:28px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 18px;
+    font-weight: 700;
+    pointer-events: none;
+    transition: .5s ease;
+    transform: translateY(-50%);
+   
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+     top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 23px;
+}
+ .form-box .remember-forgot{
+    font-size: 15px;
+    font-weight: 500;
+    margin: -15px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.remember-forgot label input {
+    accent-color: #e4e4e4;
+    margin-right: 0.2em;
+    
+}
+.remember-forgot a{
+    color: #e4e4e4;
+    text-decoration: none;
+   
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #4345c6;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+    color: #e4e4e4;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+.btn a{
+    color:black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.btn a:hover{
+    text-decoration: underline;
+    color: #e4e4e4;
+   
+}
+.form-box .login-register{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.5em;
+}
+.login-register p a{
+    color: #ed1039;
+    font-weight: 700;
+    text-decoration: none;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
